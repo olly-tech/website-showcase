@@ -1,0 +1,88 @@
+/*LAYOUT AND POSITIONING*/
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header, main {
+    margin: 1%;
+    padding: 1%;
+}
+
+section {
+    padding: 1%;
+    grid-column: 1/span 12;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+/*FONTS AND OTHER STUFF*/
+body {
+    background-color:cornflowerblue;
+    font-size: 1.1em;
+    
+}
+
+
+
+h1, h2 {
+    font-style: italic;
+}
+
+img {
+width: 50%;
+/* height: 20%; */
+}
+
+/* NAVBAR STYLING */
+nav {
+    background-color:rosybrown;
+    overflow: hidden;
+    /* img header"loveyourself quote" */
+   padding: 4%;
+    background-image: url("love-yourself\ banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+nav li {
+    list-style-type: none;
+  
+    float: left;
+}
+nav a {
+    text-decoration: none;
+    font-size: 2em;
+    color: beige;
+    display: inline-block;
+    padding: 2%;
+    border-style: dotted;
+    border-color: red;
+}
+
+.socialImg{
+    width:10%;
+    height: auto;
+    padding: 1.5em;
+}
+
+/*QUIZ*/
+.border {
+    
+    border-style:groove;
+    border-color: gold;
+    margin: 10px;
+}
+
+fieldset {
+    border: none;
+}
+.quiz{
+    
+    font-size: 1.4em
+}
+
