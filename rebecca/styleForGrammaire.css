@@ -1,0 +1,172 @@
+
+
+/*nav bar color stuff*/
+nav {
+background-color: #320232;
+padding: 10px;
+
+
+
+}
+
+.navbar {
+display: flex;
+list-style: none;
+justify-content: space-around;
+align-items: center;
+
+}
+
+.navbar li {
+position: relative;
+
+}
+
+.navbar a {
+text-decoration: none;
+color: whitesmoke;
+padding: 10px 15px;
+display: block;
+}
+
+.navbar a:hover {
+background-color: rgb(62, 54, 113);
+border-radius: 5%;
+}
+
+/* Dropdown Styles */
+.dropdown {
+display: none;
+position: absolute;
+background-color: #50366d;
+list-style: none;
+top: 100%;
+left: 0;
+width: 180px;
+padding: 0;
+}
+
+.dropdown li {
+width: 100%;
+}
+
+.dropdown a {
+width: 100%;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+    border-radius: 2%;
+    }
+
+
+
+/*Main style */
+body {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(196, 161, 227);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+
+
+
+
+/* Conjugation verb tables design*/
+table {
+    border-collapse: collapse; /* Removes double borders */
+    width: 50%;
+    
+   
+}
+th, td {
+    border: 2px solid #4d0e87; /* Border for table cells */
+    padding: 10px; /* Space inside the cell */
+    text-align: center;
+    
+    
+}
+th {
+    background-color:rgb(148, 82, 206); /*  background for headers */
+    color: #f1eaf1;
+}
+
+td {
+    background-color: #d4c3e8;
+}
+
+
+/*Quiz styling in exercises and input er verb examples etc.,*/
+fieldset {
+    border: solid #4d0e87;
+    padding: 15px;
+    max-width: 300px;
+    background-color: #d4c3e8;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    
+}
+
+legend {
+    font-weight: bold;
+    float: left;
+    text-decoration: underline;
+}
+
+.radio-label, .checkbox-label {
+    display: flex;
+    justify-content: space-between; /* Pushes text and input apart */ /* Space between text and radio button */
+    align-items: center; /* Align text and radio button vertically */
+    width: 200px; /* Adjust width as needed */  /* Adjust based on preferred label width */
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*For irregular verbs page
+Align label text to center
+align textarea box to center 
+
+
+And change size of textarea box
+*/
+
+/* Center label and textarea */
+/* Style the textarea */
+textarea {
+    width: 250px; /* Set width */
+    height: 150px; /* Set height */
+    resize: none; /* Prevent resizing */
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px; /* Space between label and textarea */
+    margin-left: 0;
+    
+   
+}
+
