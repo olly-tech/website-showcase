@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Void</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 60px;
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px;
+            position: relative;
+        }
+
+        /* The Close Button */
+        .close-btn {
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* User input */
+        #userInput {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>THE ZONE</h1>
+    </header> 
+
+    <!-- Navigation Bar -->
+    <div id="navbar"></div>
+    <script>
+        fetch(`navbar.html`) 
+        .then(response => response.text())
+        .then(data => document.getElementById(`navbar`).innerHTML = data);
+    </script>
+<main>
+    
+    <img src="thevoid.png" alt="The Zone Logo" id="header-image" >
+</main>
+    <!-- Button to trigger the popup -->
+    <button id="openModalBtn">THE VOID</button>
+
+    <!-- The Modal -->
+    <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModalBtn" class="close-btn">&times;</span>
+            <h2>What's bothering you today?</h2>
+            <input type="text" id="userInput" placeholder="Type your worries...">
+            <button id="submitInput">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal and buttons
+        const modal = document.getElementById('popupModal');
+        const openModalBtn = document.getElementById('openModalBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const submitInputBtn = document.getElementById('submitInput');
+        const userInput = document.getElementById('userInput');
+    
+        // Create result div and append to the body
+        const resultDiv = document.createElement("div"); 
+        document.body.appendChild(resultDiv);
+    
+        // Open the modal when the user clicks the "Open Popup" button
+        openModalBtn.onclick = function () {
+            modal.style.display = 'block';
+        };
+    
+        // Close the modal when the user clicks the (X) button
+        closeModalBtn.onclick = function () {
+            modal.style.display = 'none';
+        };
+    
+        // Submit button action
+        submitInputBtn.onclick = function () {
+            const enteredText = userInput.value.trim();
+            if (enteredText !== "") {
+                resultDiv.innerHTML = `YOU'VE SUBMITTED YOUR WORRIES TO THE VOID!`;
+            } else {
+                resultDiv.innerHTML = "Please enter some text";
+            }
+    
+            // Close the modal after submission
+            modal.style.display = 'none';
+        };
+      
+    </script>
+     <footer>
+        <p>&copy; The Zone 2025 </p>
+    </footer>
+    <script>
+    
+        console.log("THE ZONE");
+    </script>
