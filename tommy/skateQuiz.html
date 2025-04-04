@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skateQuiz.css">
+    <title>skatepark-calculator</title>
+</head>
+<body>
+    
+    <h3 class="header">Answer these super pertinent questions to find out which skatepark is for you</h3>
+
+    <main class="quiz-container">
+        <section class="quiz">
+
+            <div class="result-div hidden" id="result"></div>
+
+            <form name="quiz">
+                <fieldset class="question1">
+                    <legend>What's your favourite day of the week?</legend>
+                    <input type="radio" name="day" id="monday" value="monday">
+                    <label for="monday">Monday</label>
+                    <input type="radio" name="day" id="tuesday" value="tuesday">
+                    <label for="yellow">Tuesday</label>
+                    <input type="radio" name="day" id="wedsneday" value="wedsneday">
+                    <label for="green">Wedsneday</label>
+                    <input type="radio" name="day" id="thursday" value="thursday">
+                    <label for="black">Thursday</label>
+                    <input type="radio" name="day" id="friday" value="friday">
+                    <label for="friday">Friday</label>
+                    <input type="radio" name="day" id="saturday" value="saturday">
+                    <label for="saturday">Saturday</label>
+                    <input type="radio" name="day" id="sunday" value="sunday">
+                    <label for="sunday">Sunday</label>
+                </fieldset>
+                <fieldset class="question2">
+                    <legend>What's your preferred choice of cheese?</legend>
+                    <input type="radio" name="cheese" id="brie" value="brie">
+                    <label for="brie">Brie</label>
+                    <input type="radio" name="cheese" id="wensleydale" value="wensleydale">
+                    <label for="wensleydale">Wensleydale</label>
+                    <input type="radio" name="cheese" id="swiss" value="swiss">
+                    <label for="swiss">Swiss</label>
+                    <input type="radio" name="cheese" id="lactose-intolerant" value="lactose-intolerant">
+                    <label for="lactose-intolerant">I'm lactose-intolerant</label>
+                </fieldset>
+                <fieldset class="question3">
+                    <legend>Favourite holiday destination?</legend>
+                    <input type="radio" name="holiday" id="russia" value="russia">
+                    <label for="russia">Russia</label>
+                    <input type="radio" name="holiday" id="siberia" value="siberia">
+                    <label for="serbia">Siberia</label>
+                    <input type="radio" name="holiday" id="leningrad" value="leningrad">
+                    <label for="leningrad">Leningrad</label>
+                    <input type="radio" name="holiday" id="smolensk" value="smolensk">
+                    <label for="smolensk">Smolensk</label>
+                    <input type="radio" name="holiday" id="ussr" value="ussr">
+                    <label for="ussr">The USSR</label>
+                </fieldset>
+                <fieldset class="question4">
+                    <legend>Which side of the bed do you wake up on?</legend>
+                    <input type="radio" name="bed" id="right" value="right">
+                    <label for="right">Right</label>
+                    <input type="radio" name="bed" id="left" value="left">
+                    <label for="no-bed">Left</label>
+                    <input type="radio" name="bed" id="no-bed" value="no-bed">
+                    <label for="no-bed">I have no bed</label>
+                </fieldset>
+
+                <div class="submit">
+                    <button class="button" type="button" onclick="submitButton()">SUBMIT</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+<script src="skateQuiz.js"></script>
+    
+</body>
+</html>

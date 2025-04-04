@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Petition Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+
+    <div class="h1-container">
+    <h1>Petition Form For Chorlton Skatepark Renovation</h1>
+    </div>
+
+    <form method="post">
+
+      <fieldset>
+
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+
+      </fieldset>
+
+      <fieldset class="radio-container">
+
+        <legend>Gender (required)</legend>
+
+        <div class="column1">
+        <label for="skater"><input id="skater" type="radio" name="gender-type" class="inline" checked />Skater</label>
+
+        <label for="non-skater"><input id="non-skater" type="radio" name="gender-type" class="inline" />non-Skater</label>
+      </div>
+        
+
+      </fieldset>
+
+      <fieldset>
+
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Word of mouth</option>
+            <option value="2">Community board</option>
+            <option value="3">Online</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+
+        <label for="bio">What else would you like to see done with Chorlton Park?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="..."></textarea>
+        </label>
+
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+
+      <p>Thank you for your time!</p>
+
+    </form>
+  </body>
+</html>
