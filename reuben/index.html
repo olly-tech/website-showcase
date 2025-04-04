@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <!-- Metadata Start -->
+    <title>The Adventurers Guild - Sword Coast Travel Guide - Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sword Coast travel guide">
+    <meta name="keywords" content="Dungeons and Dragons, DnD, D&D, Sword Coast">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SCTGSS.css">
+    <link rel="icon" type="image/png" href="beholder.png">
+    <!-- Metadata End -->
+  </head>
+
+  <body>
+    <!-- Website Header Start -->
+    <header>
+      <h1>Welcome to The Sword Coast</h1>
+    </header>
+    <!-- Website Header End -->
+
+    <!-- Website Navigation Start -->
+      <nav>
+        <h3>Prime Destinations for Fledgling Adventurers</h3>
+        <ul>
+          <!-- Simplified Home link -->
+          <li><a href="index.html" id="active">Home</a></li>
+          <li><a href="sword-coast-travel-guide(towns-and-cities).html">Towns and Cities</a></li>
+          <li><a href="sword-coast-travel-guide(natural-beauty).html">Natural Beauty</a></li>
+          <li><a href="sword-coast-travel-guide(ruins-and-history).html">Ruins and History</a></li>
+          <li><a href="quiz.html">Roll for Intelligence</a></li>
+        </ul>
+      </nav>
+    <!-- Website Navigation End -->
+
+    <!-- About the Website Start -->
+    <section id="About">
+      <h2>Looking for an adventure?</h2>
+      <p>
+        Detailed below is a list of prime destinations for adventurers both novice and veteran. This list includes their locations, how to get there, an image of your destination, and a brief description of the area.
+      </p>
+      <p>Description about the purpose of the website.</p>
+    </section>
+    <!-- About the Website End -->
+
+    <!-- Maps Start -->
+    <section id="Maps">
+      <h3>Maps:</h3>
+      <a href="https://media.wizards.com/2015/images/dnd/resources/Sword-Coast-Map_HighRes.jpg" target="_blank">
+        <p>Click here for a map detailing the Sword Coast as well as the surrounding area</p>
+      </a>
+      <a href="https://www.aidedd.org/atlas/index.php?map=R&l=1" target="_blank">
+        <p>Click here for an interactive map detailing the Sword Coast as well as the surrounding area</p>
+      </a>
+    </section>
+    <!-- Maps End -->
+
+    <!-- Sign-Up Form Start -->
+    <section id="Sign-Up">
+      <h2>Sign-Up Form</h2>
+      <form action="submit_form.html" method="post">
+        <fieldset>
+          <legend>Join The Adventurers Guild</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <br><br>
+
+          <label for="character-name">Character Name:</label>
+          <input type="text" id="character-name" name="character-name" required>
+
+          <br><br>
+
+          <label for="class">Class:</label>
+          <select id="class" name="class" required>
+            <option value="">Please Choose</option>
+            <option value="Barbarian">Barbarian</option>
+            <option value="Bard">Bard</option>
+            <option value="Cleric">Cleric</option>
+            <option value="Druid">Druid</option>
+            <option value="Fighter">Fighter</option>
+            <option value="Monk">Monk</option>
+            <option value="Paladin">Paladin</option>
+            <option value="Ranger">Ranger</option>
+            <option value="Rogue">Rogue</option>
+            <option value="Sorcerer">Sorcerer</option>
+            <option value="Warlock">Warlock</option>
+            <option value="Wizard">Wizard</option>
+          </select>
+
+          <br><br>
+
+          <label for="level">Level:</label>
+          <select id="level" name="level" required>
+            <option value="">Please Choose</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+          </select>
+
+          <br><br>
+
+          <label for="backstory">Backstory:</label>
+          <textarea id="backstory" name="backstory" placeholder="Enter your backstory here" maxlength="500"></textarea>
+        </fieldset>
+
+        <!-- Gameplay Preferences -->
+        <fieldset>
+          <legend>Gameplay Preferences</legend>
+
+          <fieldset>
+            <!--<div class="myDIV">--><legend>Preferred Playstyle</legend></div>
+            <!-- <div class="hide">I am shown when someone hovers over the div above.</div> -->
+            <label><input type="radio" name="playstyle" value="Roleplay Oriented" required> Roleplay Oriented</label>
+            <label><input type="radio" name="playstyle" value="Combat Oriented"> Combat Oriented</label>
+            <label><input type="radio" name="playstyle" value="A mix of both"> A mix of both</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferred World Type</legend>
+            <label><input type="radio" name="world-type" value="Open World" required> Open World</label>
+            <label><input type="radio" name="world-type" value="Dungeon Crawl"> Dungeon Crawl</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Gameplay Intensity</legend>
+            <label><input type="radio" name="intensity" value="Beginner" required> Beginner</label>
+            <label><input type="radio" name="intensity" value="Intermediate"> Intermediate</label>
+            <label><input type="radio" name="intensity" value="Veteran"> Veteran</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Do you have a party?</legend>
+            <label><input type="radio" name="party" value="Yes" required> Yes</label>
+            <label><input type="radio" name="party" value="No"> No</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>How frequently do you play?</legend>
+            <label for="frequency">Frequency:</label>
+            <select id="frequency" name="frequency" required>
+              <option value="">Please Choose</option>
+              <option value="Daily">Daily</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Bi-weekly">Bi-weekly</option>
+              <option value="Monthly">Monthly</option>
+              <option value="Bi-monthly">Bi-monthly</option>
+              <option value="Other">Other</option>
+              <script>
+                document.getElementById('frequency').addEventListener('change', function() {
+                  document.getElementById('other-frequency').style.display = this.value === 'Other' ? 'inline-block' : 'none';
+                });
+              </script>
+            </select>
+            <input type="text" name="other-frequency" id="other-frequency" placeholder="Specify if 'Other'" style="display:none;">
+          </fieldset>
+        </fieldset><br>
+
+        <button class="submit_form" type="submit">Submit</button>
+        <script>
+          document.getElementById("Sign-Up").addEventListener("submit", function(event) {
+              event.preventDefault(); // Prevent actual form submission
+              window.location.reload(); // Reload the same page
+          });
+      </script>
+      </form>
+    </section>
+    <!-- Sign-Up Form End -->
+
+    <!--Button to top start-->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- Button to top end-->
+
+    <!-- Footer Start -->
+    <footer>
+      <p>© Ruby Garnet 2025</p>
+    </footer>
+    <!-- Footer End -->
+
+    <!--Javascript Start-->
+    <script src="SCTGSS.js"></script>
+    <!-- Javascript End-->
+  </body>
+</html>
