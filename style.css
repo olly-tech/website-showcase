@@ -42,7 +42,7 @@ header {
     background-color: var(--linkcolour);
 }
 
-.read-next a:hover, .read-next a:visited {
+.read-next a:hover {
     background-color: var(--hovercolour);
     color: var(--light);
 }
