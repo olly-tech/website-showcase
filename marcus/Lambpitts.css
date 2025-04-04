@@ -1,0 +1,90 @@
+
+body {
+    color: #291D17;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#6FC392;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3F8F5B;
+    width: 100% !important;
+
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: #291D17;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #52AA5E;
+    color: #291D17;
+}
+
+.active {
+    background-color: #52AA5E;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-gap: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+
+#Box {
+    color:#291D17;
+    background-color:#3F8F5B;
+    border-style: solid;
+    border-width:3px;
+    border-color:#2F3A28;
+    border-radius:5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+   }
+
+.about {
+    grid-column: 2 / span 4;
+    grid-row: 1;
+}
+
+.button {
+    background-color: #2F3A28;
+    width: 100%;
+    text-decoration: none;
+    color: #6FC392;
+    padding: 14px 16px;
+    border-radius: 5px; /* Add rounded corners */
+    display: inline-block; /* Ensure proper alignment */
+    text-align: center;
+  
+}
