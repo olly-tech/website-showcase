@@ -1,0 +1,141 @@
+/* colours are set up in a basic way to see general layout */
+
+    
+
+html{
+background-color: darkgreen;
+}
+
+/* navigation */
+
+nav{
+    display: inline-flex;
+    justify-content: center;
+    justify-items: center;
+    list-style-type: none;
+
+    border-radius: 10px;
+    width: 100%;
+    
+
+    background-color: rgb(19, 96, 241);
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    display: inline;
+    float: left;
+    padding: 4px;
+}
+
+nav a {
+    text-decoration: none;                                      /* Remove underline */
+    color: rgb(0, 0, 0);                                      /* Set initial text color to purple */
+    padding: 10px 15px;                                         /* 
+                                                                    First value (10px) applies to the top and bottom.
+                                                                    Second value (15px) applies to the left and right.i
+                                                                */
+    display: inline-block;                                      /* Ensures padding is applied properly */
+    transition: background-color 0.3s ease, color 0.3s ease;    /* Smooth transition for hover */
+    border-radius: 20px;
+}
+
+nav a:hover {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: yellow; 
+}
+
+
+body{
+    margin: 0;
+    background-color: rgb(37, 229, 229);
+    padding: 8px;
+
+}
+
+/* classes */
+
+/* title + header */
+.title{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* main-content*/
+.main-content{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    background-color: crimson;
+    padding: 8px;
+
+}
+.main-content-gallery{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    background-color: crimson;
+    padding: 8px;
+    
+}
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    justify-content: left;
+}
+
+.gallery-item{
+    display: flex;
+    padding: 8px;
+    justify-content: left;
+
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.gallery-item:hover{
+    /* hover stuff */
+    opacity: 85%;
+}
+
+
+
+footer{
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+    justify-content: center;
+    justify-items: center;
+    background-color: darkorchid;
+    margin-bottom: auto;
+    position: fixed;
+}

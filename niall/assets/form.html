@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <section>
+            <h2>Sign-Up Form</h2>
+            <form action="submit_form.html" method="post">
+                <fieldset>
+                    <legend>Join Us</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="games">Favorite Type of Cooperative Game:</label>
+                    <select id="games" name="games">
+                        <option value="board">Board Games</option>
+                        <option value="video">Video Games</option>
+                        <option value="roleplay">Role-Playing Games</option>
+                    </select>
+
+                    <label for="comments">Tell us about your favorite games:</label>
+                    <textarea id="comments" name="comments" placeholder="Comment here"></textarea>
+
+                    <label for="number">How Many Croissants?</label>
+                    <input type="number" id="croissants" name="number" min="1" max="45">
+                </fieldset>
+                <fieldset>
+                    <legend>Which Croissant?</legend>
+                    <!--PLAIN-->
+                    <label for="plain">Plain</label>
+                    <input type="radio" id="plain" name="croissants" value="plain">
+
+                    <!--CHOCOLATE-->
+                    <label for="chocolate">Chocolate</label>
+                    <input type="radio" id="chocolate" name="croissants" value="chocolate">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pick Many Croissants</legend>
+
+                    <label for="almond">Almond</label>
+                    <input type="checkbox" id="almond" name="pastries" value="almond">
+
+                    <label for="painauchoc">Pain Au Chocolat</label>
+                    <input type="checkbox" id="painauchoc" name="pastries" value="painauchoc">
+                </fieldset>
+                
+                <button type="submit">Buy Croissants Now</button>
+
+            </form>
+        </section>      
+    </body>
+</html>
