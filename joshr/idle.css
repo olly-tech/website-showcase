@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("images/spooky.gif");
+    background-repeat: repeat;
+}
+
+.game-container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-image: url("images/clouds.png");
+    background-repeat: repeat;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#clickButton {
+    width: 300px;
+}
+
+#clickButton:active {
+    transform: scale(0.95);
+}
+
+#score {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    top: 20px;
+    right: 20px;
+    position: fixed;
+    text-decoration: none;
+    padding: 10px;
+}

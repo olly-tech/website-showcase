@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="idle.css">
+    <link rel="icon" type="image/png" href="images/favicon.PNG">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Make numbers go big!</h1>
+        <img src="images/gnome.png" id="clickButton" alt="a gnome" onclick="woo()">
+        <audio id="gnomeWoo1" src="sounds/gnome_woo.mp3" preload="auto"></audio>
+        <audio id="gnomeWoo2" src="sounds/gnomed.mp3" preload="auto"></audio>
+        <audio id="gnomeWoo3" src="sounds/gnomedeath.mp3" preload="auto"></audio>
+        <p>Score: <span id="score">0</span></p>
+        <div id="upgrades">
+            <p>Upgrade: Increase Click Value</p>
+            <button disabled id="upgradeButton">Buy Upgrade (Cost: 10)</button>
+            <p>Upgrade Level: <span id="upgradeLevel">0</span></p>
+        </div>
+    </div>
+    <h3><a href="index.html">back home</a></h3>
+    <script src="idle.js"></script>
+</body>
+</html>

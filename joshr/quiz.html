@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Try out out quiz to see what are the best places for you to visit!">
+    <meta name="keywords" content="stockport, activities, museums, parks, quiz, greater manchester">
+    <meta name="author" content="Josh Robinson">
+    <title>In&Around - Quiz!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.PNG">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <img src="images/logo.PNG" class="logo" alt="logo for In&Around Stockport, blue and white with a train">
+        </section>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>                
+            <li><a href="town.html">Town Centre</a></li>
+            <li><a href="museums.html">Museums</a></li>
+            <li><a href="parks.html">Parks</a></li>
+            <li><a href="outer.html">Nearby Area</a></li>
+            <li><a href="peaks.html">Peak District</a></li>
+            <li><a href="groups.html">Groups</a></li>
+            <li><a href="quiz.html" class="active">Quiz</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="gnome.html">Gnome</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Indecisive? Need to do a quiz to make a decision for you?</h1>
+        <h2>Well you're in luck!</h2>
+        <form name="Quiz">
+            <label for="name">Enter your name: </label><input type="text" name="name" size="30"><br><br>
+            <ol>
+                <li><p>Question. What kind of bear is best?</p></li>
+                <input type="radio" name="bear" value="brown">
+                <label for="brown">Brown Bear</label><br><br>
+                <input type="radio" name="bear" value="black">
+                <label for="black">Black Bear</label><br><br>
+                <input type="radio" name="bear" value="polar">
+                <label for="polar">Polar Bear</label><br><br>
+                <input type="radio" name="bear" value="ridiculous">
+                <label for="ridiculous">That's a ridiculous question.</label><br><br><br>
+
+                <img src="images/gnome.png" id="quizGnome" alt="a gnome" onclick="woo()">
+                <audio id="gnomeWoo1" src="sounds/gnome_woo.mp3" preload="auto"></audio>
+                <audio id="gnomeWoo2" src="sounds/gnomed.mp3" preload="auto"></audio>
+                <audio id="gnomeWoo3" src="sounds/gnomedeath.mp3" preload="auto"></audio>
+
+                <li><p>Do bears eat beets?</p></li>
+                <input type="radio" name="beets" value="bears">
+                <label for="bears">Bears</label><br><br>
+                <input type="radio" name="beets" value="beets">
+                <label for="beets">Beets</label><br><br>
+                <input type="radio" name="beets" value="battlestar">
+                <label for="battlestar">Battlestar Galactica</label><br><br><br>
+
+                <li><label for="ducks">On a scale of 0 to 100 and in increments of 10, how endangered in general are ducks?</label></li>
+                <input type="number" name="ducks" min="0" max="100" step="10"><br><br><br>
+            </ol>
+        </form>
+
+        <button type="button" onclick="checkAnswers();">Submit</button>
+    </main>
+    <footer>
+        <p>&copy; 2025 In&Around Stockport</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

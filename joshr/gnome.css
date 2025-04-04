@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    background-image: url("images/background.avif");
+    background-repeat: repeat;
+    background-position: center center;
+  }
+  
+  #hiddenImage {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  #hoverArea {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    z-index: 10;
+  }
+
+  h3 {
+    top: 20px;
+    right: 20px;
+    position: fixed;
+    border-style: solid;
+    background-color: aquamarine;
+    color: blue;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
