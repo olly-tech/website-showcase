@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Quiz!</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="A Quiz to find out which Video Game you should play next.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="main_style.css">
+        <link rel="stylesheet" href="quizStyle.css">
+        <script src="quiz.js"></script>
+    </head>
+
+    <body>
+        <header>
+            
+        </header>
+        <main>
+            <h1>Quiz: Which Video Game should I play next?</h1>
+            <form name="quiz" id="quizPage">
+            
+                <fieldset class="quizQuestions">
+                    <legend>Which category does your Job fit into best?</legend>
+                    <input type="radio" name="job" id="medical" value="medical">
+                    <label for="medical">Medical/Therapeutical: improving people's Mental and Physical Health.</label>
+                    <br>
+                    <input type="radio" name="job" id="stem" value="stem">
+                    <label for="stem">STEM Subjects: solving problems using logic and Maths/Science.</label>
+                    <br>
+                    <input type="radio" name="job" id="arts" value="arts">
+                    <label for="arts">The Arts: Theatre, Music, Art, Literature, using Creativity to inspire or entertain people.</label>
+                    <br>
+                    <input type="radio" name="job" id="handsOn" value="handsOn">
+                    <label for="handsOn">Something Hands-On: Barista, Chef, Roofer, Plumber, Hair, Makeup, Fashion, using your skills to provide a service.</label>
+                </fieldset>
+                <br>
+                <fieldset class="quizQuestions">
+                    <legend>If you were a Dog Breed, which would fit you best?</legend>
+                    <input type="radio" name="breed" id="dachshund" value="dachshund">
+                    <label for="dachshund">Dachshund - fiesty and zero chill, but still cute.</label>
+                    <br>
+                    <input type="radio" name="breed" id="husky" value="husky">
+                    <label for="husky">Husky - adorable and energetic, tendency to overreact, major drama queen, but still loved by everyone.</label>
+                    <br>
+                    <input type="radio" name="breed" id="labrador" value="labrador">
+                    <label for="labrador">Labrador - strong and energetic, always happy to be here, loves snacks.</label>
+                    <br>
+                    <input type="radio" name="breed" id="newfoundland" value="newfoundland">
+                    <label for="newfoundland">Newfoundland - chillest of vibes, laid back, chonky floof, probably needs a nap.</label>
+                </fieldset>
+                <br>
+                <fieldset class="quizQuestions">
+                    <legend>When you have a bit of free time, which would be the first one you choose to do?</legend>
+                    <input type="radio" name="hobby" id="fiction" value="fiction">
+                    <label for="fiction">Enter another Universe through e.g. Books, Music, TV, Film, or Video Games.</label>
+                    <br>
+                    <input type="radio" name="hobby" id="handsy" value="handsy">
+                    <label for="handsy">Engage in a hobby e.g. Knitting, Painting, Languages, or Puzzles.</label>
+                    <br>
+                    <input type="radio" name="hobby" id="exercise" value="exercise">
+                    <label for="exercise">Go for a walk, play a sport, or do some exercise.</label>
+                    <br>
+                    <input type="radio" name="hobby" id="social" value="social">
+                    <label for="social">Go out to eat or drink with friends or loved ones.</label>
+                </fieldset>
+                <br>
+                <fieldset class="quizQuestions">
+                    <legend>Which of the following movie series would you most like to watch right now?</legend>
+                    <input type="radio" name="movie" id="hp" value="hp">
+                    <label for="hp">Harry Potter.</label>
+                    <br>
+                    <input type="radio" name="movie" id="lotr" value="lotr">
+                    <label for="lotr">Lord of the Rings.</label>
+                    <br>
+                    <input type="radio" name="movie" id="hobbit" value="hobbit">
+                    <label for="hobbit">The Hobbit.</label>
+                    <br>
+                    <input type="radio" name="movie" id="starWars" value="starWars">
+                    <label for="starWars">Star Wars.</label>
+                </fieldset>
+                <br>
+                <fieldset class="quizQuestions">
+                    <legend>Which Hogwarts House were you sorted into?</legend>
+                    <input type="radio" name="hogwarts" id="gryffindor" value="gryffindor">
+                    <label for="gryffindor">Gryffindor.</label>
+                    <br>
+                    <input type="radio" name="hogwarts" id="hufflepuff" value="hufflepuff">
+                    <label for="hufflepuff">Hufflepuff.</label>
+                    <br>
+                    <input type="radio" name="hogwarts" id="ravenclaw" value="ravenclaw">
+                    <label for="ravenclaw">Ravenclaw.</label>
+                    <br>
+                    <input type="radio" name="hogwarts" id="slytherin" value="slytherin">
+                    <label for="slytherin">Slytherin.</label>
+                </fieldset>
+
+                <!--
+                <fieldset>
+                    <legend></legend>
+                    <input type="radio" name="lotrRace" id="" value="">
+                    <label for=""></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend></legend>
+                    <input type="radio" name="gamingStyle" id="" value="">
+                    <label for=""></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend></legend>
+                    <input type="" name="dnd" id="" value="">
+                    <label for=""></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend></legend>
+                    <input type="radio" name="gameVibe" id="" value="">
+                    <label for=""></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend></legend>
+                    <input type="radio" name="opinion" id="" value="">
+                    <label for=""></label>
+                </fieldset>
+                -->
+                <br>
+
+                <button type="button" onclick="checkAnswers()">Get Your Result</button>
+
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+
+    </body>
+
+</html>

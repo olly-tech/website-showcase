@@ -1,0 +1,87 @@
+<!-- 
+This is something Claire told us to make for later I believe
+To go on our websites.
+-->
+
+<!-- EXAMPLE QUIZ QUESTIONS: -->
+
+<!-- What Game should I play Next? -->
+
+<!--
+
+1. Which category does your Job Title fit into best?
+    a. Medical/Therapeutical: improving people's Mental and Physical Health.
+    b. STEM Subjects: solving problems using logic and Maths/Science.
+    c. The Arts: Theatre, Music, Art, Literature, using Creativity to inspire or entertain people.
+    d. Something Hands-On: Barista, Chef, Roofer, Plumber, Hair, Makeup, Fashion, using your skills to provide a service.
+
+2. If you were a Dog Breed, which would fit you best?
+    a. Dachshund - fiesty and zero chill, but still cute.
+    b. Husky - adorable and energetic, tendency to overreact, major drama queen, but still loved by everyone.
+    c. Labrador - strong and energetic, always happy to be here, loves snacks.
+    d. Newfoundland - chillest of vibes, laid back, chonky floof, probably needs a nap.
+
+3. When you have a bit of free time, which would be the first one you choose to do?
+    a. Enter another Universe through e.g. Books, Music, TV, Film, or Video Games.
+    b. Engage in a hobby e.g. Knitting, Painting, Languages, or Puzzles.
+    c. Go for a walk, play a sport, or do some exercise.
+    d. Go out to eat or drink with friends or loved ones.
+
+4. Which of the following movie series would you most like to watch right now?
+    a. Harry Potter.
+    b. Lord of the Rings.
+    c. The Hobbit.
+    d. Star Wars.
+
+5. Which Hogwarts House were you sorted into when you were 11?
+    a. Gryffindor.
+    b. Hufflepuff.
+    c. Ravenclaw.
+    d. Slytherin.
+
+6. If you weren't a human, which Lord of the Rings race would you belong in?
+    a. Hobbit - eating, drinking, and smoking in the countryside. Weapon of choice: a Cake Fork.
+    b. Dwarf - eating, drinking, and smoking in the mountains. Weapon of choice: an Axe.
+    c. Elf - gracefully gliding through the forest and living forever. Weapon of choice: a Bow and Arrow.
+    d. Wizard - absolute GOAT with the ability to talk to Moths and Eagles. Weapon of choice: a Staff.
+
+7. What is your usual Gaming style?
+    a. Stealth kills and sneaking around.
+    b. Take cover, aim, fire, push forward.
+    c. Throw a grenade and hope for the best.
+    d. Dodge and run away for eternity.
+
+8. Do you know your D&D Alignment? (Tick all that apply)
+    a. Lawful.
+    b. Chaotic.
+    c. Neutral.
+    d. Good.
+    e. Evil.
+    f. I don't know.
+
+9. What game are you looking to play next?
+    a. Something relaxing and peaceful, that will help soothe my mind.
+    b. Something with a huge open world map, lot of collectibles and achievements, that I can adventure in and ollect.
+    c. Something story-based with a good plot that I get heavily invested in, some moderate gameplay, and major plot reveals.
+    d. Something gruelling with unbelievably difficult combat sequences, that will make me annoyed but also proud when I win.
+
+10. Final Question... Did you enjoy taking this quiz?
+    a. Yes, it was awesome - write another one!
+    b. It was decent, I would like my result please.
+    c. I nearly didn't make it through, please give me my result now.
+    d. You should stick to writing webpages and leave quizzing to BuzzFeed.
+
+*BUTTON - GET MY RESULT:*
+Redirects to game suggestion
+Based on e.g. Q9-
+a. You should play Animal Crossing.
+b. You should play Hogwarts Legacy.
+c. You should play Uncharted 4: A Thief's End.
+d. You should play The Last of Us: Part II.
+e. You should play Dark Souls.
+
+*Other perhaps important questions to ask:*
+- What console do you play on? (switch, ps4, ps5, xbox, iphone, smart phone, tablet, PC)
+- Do you want to play solo, multiplayer, or online?
+- If multiplayer/online, do you want to collab with or fight each other?
+-->

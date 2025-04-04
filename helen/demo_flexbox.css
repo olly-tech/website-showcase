@@ -1,0 +1,28 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+
+    /*reset positioning*/
+    margin: 0;
+    padding: 0;
+}
+
+.flexboxGallery {
+    display: flex;
+    gap: 0px;
+    max-width: 100%;
+    justify-content: center;
+}
+/*justify content could also be instead of center, space-between, space-evenly etc*/
+
+.flexboxGallery img {
+    width:20%;
+    height: auto;
+    border-radius: 0px;
+    transition: transform 0.3s ease;
+}
+
+.flexboxGallery img:hover {
+    transform: scale(1.03);
+}
+/*transform when you hover over image*/ 
+/* instead of img, you could put a, for hovering over a link, check w3schools for help and options*/

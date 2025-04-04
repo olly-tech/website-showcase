@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CFD.css">
+    <title>Sign-Up</title>
+    <!-- Load Google Sign-In API -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    
+</head>
+<body>
+  <section class="SignUp">
+  <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Recipes.html">Recipes</a></li>
+            <li><a href="Methods.html">Methods</a></li>
+            <li><a href="Community Recipes.html">Community Recipes</a></li>
+            <li><a href="SignUp.html">Sign-Up</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Sign-Up</h1>
+        <p>Join our community and start sharing your recipes!</p>
+        
+        <form action="submit_form.php" method="post" id="signupForm">
+            <fieldset>
+                <legend>Join Us</legend>
+                
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-label="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-label="Enter your email address">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="6" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" title="Password must be at least 6 characters and include a letter and a number" aria-label="Enter your password (minimum 6 characters)">
+                </div>
+                
+                <button type="submit" aria-label="Submit sign-up form">Sign Up</button>
+                
+                <div class="google-signin-wrapper">
+                    <h3>Or sign up with Google</h3>
+                    <div class="g_id_signin"></div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+  </section>
+    <footer>Cooking for Dummies © 2025</footer>
+
+    <script>
+        function initializeGoogleSignIn() {
+            google.accounts.id.initialize({
+                client_id: "YOUR_ACTUAL_GOOGLE_CLIENT_ID",
+                callback: handleCredentialResponse,
+                auto_select: false
+            });
+            
+            google.accounts.id.renderButton(
+                document.querySelector('.g_id_signin'),
+                {
+                    type: 'standard',
+                    theme: 'outline',
+                    size: 'large',
+                    text: 'signup_with',
+                    shape: 'rectangular',
+                    logo_alignment: 'left'
+                }
+            );
+        }
+
+        function handleCredentialResponse(response) {
+            console.log("Encoded JWT ID token: " + response.credential);
+            alert("Successfully signed up with Google!");
+        }
+
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            if (!this.checkValidity()) {
+                event.preventDefault();
+                alert("Please fill out all fields correctly.");
+            } else {
+                event.preventDefault(); // Remove this line once backend is ready
+                alert("Successfully signed up!");
+                this.reset();
+            }
+        });
+
+        window.onload = initializeGoogleSignIn;
+    </script>
+</body>
+</html>
