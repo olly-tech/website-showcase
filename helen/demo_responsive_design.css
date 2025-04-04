@@ -1,0 +1,29 @@
+/*We use Media Queries to address the smaller screen issues*/
+
+/*Styling for Desktop Screens*/
+
+@media (min-width: 1024px) {
+    body {/*Whatever the Desktop Style you've already done is*/
+    }
+}
+
+/*Styling for Mobile Screens*/
+
+@media screen and (max-width: 600px) {
+/*Completely redo the website Style for this Phones*/
+}
+
+/*Styling for Tablet - 800px?*/
+@media screen and(max-width: 800px) {
+}
+
+/*
+You have to re-write it all out. 
+Line 5 says "if over 1024px, use this". 
+Line 12 says "if under 600px, use this".
+Grid will have fewer Columns.
+Look at widths of common devices to see what it looks like on different screens. 
+--> Open page on browser, right click and click 'Inspect', then it has an icon like a Laptop, then go 'Dimensions'.
+
+You can do it as 3 separate CSS files for the 3 main Screen Types. You would link all 3 CSS files in the Head of the HTML, but in each CSS file, it states at the top "Only use me if Screen is X size". You still have to put the Style in Curly Brackets.
+*/

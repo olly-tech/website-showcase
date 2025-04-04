@@ -1,0 +1,66 @@
+/*set up a grid layout*/
+
+/*6 = columns*/
+/*1fr = 1 fraction, so 6 columns of equal width*/
+/*minmax 0 = it can be as small as 0 but never bigger than the one-6th fraction*/
+/*repeat refers to it being more than 1 column - 6 columns*/
+/*The column won't get bigger than a 6th of the size of the CONTAINER*/
+/*Images eff this up a lot... set image size to 100% of the container so it doesn't go over*/
+
+.container {
+    display: grid;
+    grid-template-columns:repeat(6, minmax(0, 1fr));
+    grid-gap: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*so far, it will just go columns 1-6 in a row, so we need to specify where we want each section to start or be positioned*/
+
+/*example from Claire*/
+/*easier to start top left and work across, then down*/
+
+/*we set the container as columns, but we can now ask it to go onto other rows by asking it to start on row X*/
+
+.about {
+    grid-column: 1 / span 5;
+    grid-row: 1;
+}
+
+.meetups {
+    grid-column: 1 / span 5;
+    grid-row: 2;
+}
+
+.location {
+    grid-column: 1 / span 5;
+    grid-row: 3;
+}
+
+/*the above is all columns 1-5, so this is the final 6th column*/
+
+.aside {
+    grid-column: 6 / span 1;
+    grid-row: 1 / span 4;
+}
+
+/*then for images*/
+
+.image1 {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+.image2 {
+    grid-column: 3 / span 2;
+    grid-row: 4;
+}
+
+.image3 {
+    grid-column: 5 / span 2;
+    grid-row: 4;
+}
+

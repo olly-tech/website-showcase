@@ -1,0 +1,35 @@
+/*
+DISPLAY:
+<section class="box inline"> - appears as small inline boxes on same line.
+<section class="box inline-block"> - appears as a full length boxes on different lines that span all the way to the end and don't respect the body's margin.
+<section class="box block"> - appears as a full length box that has a margin.
+<section class="box none">
+*/
+
+/*
+UNITS:
+Don't use px for font. At least use pt if not em/rem.
+em and rem are weird-
+em focuses on the parent container, so whatever the parent is, 1em will do e.g. 1x the font.
+rem focuses on the root, e.g. the Body. It will ignore the parent.
+So use rem not em where possible. It's less messy.
+*/
+
+/*
+WIDTH AND HEIGHT:
+<section class="box px-height"> - sets pixels.
+<section class="box vw-width"> - vw is viewport.
+<section class="box %-width">
+Use vw where possible because it respects the margins.
+
+<section class="box px-height"> 
+<section class="box vw-height"> - goes full length of body.
+<section class="box %-height"> - 
+
+Use vh if you have an aside that you want to go all the way down.
+*/
+
+/*OTHER NOTES:
+-Always set a global font size in the body. And a font family.
+
+*/
