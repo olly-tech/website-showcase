@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+        <meta name="description" content="A description of the page">
+        <title>Document</title>
+
+        <link rel="icon" href="image.JPG"> 
+       
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+        <header>
+            
+            
+                
+            <div class="topnav" id="mytopnav">
+               <img id="Logo" src="Media/Logo.png" alt="Return Logo">
+                       
+                 <a href='index.html'>Home</a>
+                 <a href='about.html'>About</a>
+                 <a href='location.html'>Locations</a>
+                 <a href='activities.html'>Activities</a>
+                
+                
+                <a href="javascript:void(0);" class="icon" onclick="topNavFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+
+            </div>
+
+            
+        </header>
+
+
+        <main>
+              
+            <section>
+                <h1>Our Activities.</h1>
+            </section>
+
+            <section class="organicShape">
+
+                <audio id="ambientAudio" src="Media/Ambiment - The Ambient - Kevin MacLeod.mp3" loop preload="auto"></audio>
+              
+                <svg id="organicSVG" width="500px" height="500px" >
+
+                    <path 
+                        fill="#a1db9e"  
+                        stroke="none"
+                        d="M382,302Q364,364,302,375.5Q240,387,174,379.5Q108,372,72,306Q36,240,59,161Q82,82,161,46Q240,10,297,68Q354,126,377,183Q400,240,382,302Z" 
+                       >
+
+                            <animate attributeName ="d" dur="30s" repeatCount="indefinite" 
+                            values="M382,302Q364,364,302,375.5Q240,387,174,379.5Q108,372,72,306Q36,240,59,161Q82,82,161,46Q240,10,297,68Q354,126,377,183Q400,240,382,302Z;
+
+                            M408.5,305Q370,370,305,415Q240,460,159,431Q78,402,75,321Q72,240,72,156Q72,72,156,67.5Q240,63,294.5,97Q349,131,398,185.5Q447,240,408.5,305Z;
+
+                            M412.5,306Q372,372,306,394.5Q240,417,168,400.5Q96,384,60.5,312Q25,240,76.5,184Q128,128,184,98.5Q240,69,306.5,88Q373,107,413,173.5Q453,240,412.5,306Z;
+
+                            M410,323.5Q407,407,323.5,429.5Q240,452,183.5,402.5Q127,353,69,296.5Q11,240,47,161.5Q83,83,161.5,82.5Q240,82,316,85Q392,88,402.5,164Q413,240,410,323.5Z;
+
+                            M408,318Q396,396,318,411.5Q240,427,171.5,402Q103,377,79.5,308.5Q56,240,95.5,187.5Q135,135,187.5,81Q240,27,321.5,52Q403,77,411.5,158.5Q420,240,408,318Z;
+
+                            M382,302Q364,364,302,375.5Q240,387,174,379.5Q108,372,72,306Q36,240,59,161Q82,82,161,46Q240,10,297,68Q354,126,377,183Q400,240,382,302Z";></animate>
+
+                    </path>
+                </svg>
+
+                <div>
+                    <button onclick="playAll();">Play</button>
+                    <button class="pause" onclick="pauseAll();">Pause</button>
+                    <button id="toggleMute" class="toggleMute" onclick="toggleMute();">Mute</button>
+                </div>
+            </section>
+        
+                        
+
+
+          
+            <article></article>
+
+        </main>
+            
+        <aside></aside>    
+
+    
+        <footer>
+            <h3>Return</h3>
+            <h4>Media Acknowledgements</h4>
+            <p>Ambiment - The Ambient by Kevin MacLeod is licensed under a Creative Commons Attribution 4.0 licence. https://creativecommons.org/licenses/by/4.0/
+
+            Source: http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100630
+
+            Artist: http://incompetech.com/</p>
+        </footer>
+
+    </body>
+    <script src="script.js"></script>
+</html>

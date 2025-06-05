@@ -1,0 +1,58 @@
+/* DESKTOP */
+
+header {
+  background-color: #cecece;
+
+}
+
+main {
+  background-color: #cecece;
+}
+
+footer {
+  background-color: yellow;
+}
+
+body{
+    padding: 0.5rem 0rem;
+    font-family: Roboto, sans-serif;
+    max-width:2400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#cecece;
+    color: black;
+}
+
+.nav a{
+    text-decoration:none;
+    font-size: 50px;
+    color:#fffda9;
+}
+
+.nav li{
+  list-style-type:none;
+}
+
+/*-------------- GRID LAYOUT -------------*/
+
+/* 
+/*BODY GRID LAYOUT*/
+.IndexGridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:0px;
+  
+} */
+
+nav {
+  grid-column:1;
+}
+
+aside{
+    grid-column:2;
+  
+}
+
+footer {
+  grid-column: 1/2;
+}
