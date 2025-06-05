@@ -1,0 +1,225 @@
+:root {
+  --light-gray: #c4bebb;
+  --dark-gray: #9999A4;
+  --screen-green: #88C834;
+  --lighter-green: #ccef9d;
+  --dark-pink: #9a2257;
+  --ligther-pink: #c86490;
+  --hover-pink: #e090b3;
+}
+
+* {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px;
+  border-style: solid;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  min-width: 300px;
+  max-width: 950px;
+  margin: 10px auto;
+}
+
+main, body {
+  background-color: var(--light-gray);
+}
+
+body {
+  min-width: 300px;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.8rem;
+}
+
+strong, em, span, label {
+  display: contents; /* Need this to keep bold, italic etc. on the same line with the other text (because of display:flex behaviour) */
+  margin: 0;
+  padding: 0;
+  border-style: none;
+}
+
+header, nav, section, footer {
+  background-color: var(--dark-gray);
+}
+
+header h1, nav h2, p{
+  background-color: var(--screen-green);
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+footer, .button-row { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+button  {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  border-radius: 50%;
+  background-color: var(--dark-pink);
+  color: white;
+  margin: 20px;
+  max-height: 200px;
+}
+
+.button-notActive {
+  opacity: 30%;;
+}
+
+.hover-section:not(.button-notActive):hover {
+  background-color: var(--hover-pink);
+  color: white;
+  font-style: oblique;
+  list-style: "->";
+  list-style-position: inside;
+}
+
+.main-container, .intro-container {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.speech-box {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  display: block;
+}
+
+.intro-container, #inputNameSection, .typechartSpeech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.intro-container p {
+  display: flex; /* Needed to align text (-items) inside, but problematic for the layout, need correction of inner elements like strong, em, etc. */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 400px;
+  padding: 1rem;
+  }
+  
+.speech-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.inputIntro {
+  background-color:var(--lighter-green);
+  width: 100%;
+  margin: 0px auto auto auto;
+  border-style:solid;
+  border-width: 2px;
+  border-inline-width: 15px;
+
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.6rem;
+  color: black;
+}
+
+/* These lines will keep autofilled text from changing colour back to white */
+input.inputIntro, input.inputIntro:-webkit-autofill {
+  background-color: var(--lighter-green) !important;
+  -webkit-box-shadow: 0 0 0 1000px var(--lighter-green) inset !important;
+  color: black !important;
+}
+
+#intro0 {
+  margin-bottom: 0;
+}
+
+.upcoming {display: none;}
+
+#nameOutput {
+  text-transform: uppercase;
+}
+
+nav li {
+  list-style-type: ">";
+  list-style-position: inside;
+  max-width: 100%;
+  min-width: 100%;
+  background-color: var(--dark-pink);
+  color: white;
+}
+
+nav li.current {
+  list-style-type: ">>";
+  list-style-position: inside;
+  background-color: var(--ligther-pink);
+}
+
+a, img {
+  border-style: none;
+  color: white;
+  min-width: 100%
+}
+
+.starter-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.starterSprite {
+  padding: 0;
+  margin: 0;
+  clip-path: circle(25%);
+  position: relative;
+  object-fit: contain;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.starter-button {
+  min-width: 150px;
+  width: 150px;
+  height: 150px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 50px 0 0 0;
+
+  border-style: solid;
+  border-radius: 1px;
+
+  word-break: break-word;
+  white-space: normal;
+}
+
+/* FOR JAVASCRIPT ONLY */
+.button-pressed {
+  background-color: var(--ligther-pink);
+}
+
+#start-gymSection {
+  border: none;
+  max-width: 950px;
+  margin: 10px auto;
+  display: none;
+}
